@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "SF package.xml Generator For Bitbucket",
+	"description": "Stop writing package.xml files manually to deploy to Salesforce. This extension generates it for you based on the modified files of your Bitbucket pull request.",
+	"version": "0.1.1",
+	"author": "Jesús González",
+	"content_scripts": [
+		{
+			"matches": ["https://bitbucket.org/*/pull-requests/*/diff"],
+			"js": ["src/sfmetadatagen.js"],
+			"css" : ["src/sfmetadatagen.css"]
+		}
+	]
+}

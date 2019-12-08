@@ -1,0 +1,12 @@
+#pkgBox {
+	margin: 10px 0px;
+	border-radius: 5px;
+	color: #505F79;
+	background-color: #F4F5F7;
+	border: 1px solid #DFE1E6;
+	padding: 5px;
+}
+
+#pkgBox.hiddenEl {
+	display: none;
+}
